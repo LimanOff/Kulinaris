@@ -24,6 +24,21 @@
     </ImageView> <!--> Radial background <-->
 
     <ImageView
+        android:id="@+id/cap"
+
+        app:layout_constraintBottom_toTopOf="@id/head"
+        app:layout_constraintRight_toRightOf="@id/radial_background"
+        app:layout_constraintLeft_toLeftOf="@id/radial_background"
+
+        android:layout_marginBottom="-20dp"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:src="@drawable/cap">
+    </ImageView> <!--> Cap <-->
+
+    <ImageView
         android:id="@+id/head"
 
         app:layout_constraintTop_toTopOf="@id/radial_background"
@@ -38,21 +53,6 @@
 
         android:src="@drawable/head">
     </ImageView> <!--> Head <-->
-
-    <ImageView
-        android:id="@+id/cap"
-
-        app:layout_constraintBottom_toTopOf="@id/head"
-        app:layout_constraintRight_toRightOf="@id/radial_background"
-        app:layout_constraintLeft_toLeftOf="@id/radial_background"
-
-        android:layout_marginBottom="-20dp"
-
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-
-        android:src="@drawable/cap">
-    </ImageView> <!--> Cap <-->
 
     <ImageView
         android:id="@+id/face"
@@ -72,10 +72,11 @@
     </ImageView> <!--> Face <-->
 
     <TextView
+        android:id="@+id/title"
+
         app:layout_constraintTop_toBottomOf="@id/radial_background"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-
 
         android:layout_marginTop="10dp"
 
