@@ -10,4 +10,9 @@
 
     <color name="introBackgroundColor">#DDC7AF</color>
     <color name="introFontColor">#898786</color>
+
+    <color name="backgroundColor">#FDE4C5</color>
+
+    <color name="buttonColor">#7C908F</color>
+    <color name="buttonFontColor">#232323</color>
 </resources>
