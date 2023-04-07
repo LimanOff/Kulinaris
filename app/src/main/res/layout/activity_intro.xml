@@ -88,6 +88,6 @@
         android:textColor="@color/introFontColor"
         android:textStyle="bold"
         >
-    </TextView>
+    </TextView> <!--> Kulinaris text <-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration_Activity"
+    android:background="@color/backgroundColor">
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:id="@+id/UpCaps"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/upcaps"/> <!--> Верхние колпаки <-->
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/UpCaps"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:id="@+id/DownCaps"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/downcaps"/> <!--> Нижние колпаки <-->
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="24dp"
+
+        android:text="Регистрация"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> <!--> Регистрация текст <-->
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginBottom="60dp"
+
+        android:id="@+id/rectangle"
+
+        android:src="@drawable/rectangle"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/LoginEditText"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:hint="Логин"
+
+        android:minHeight="48dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/introFontColor"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle"
+        app:layout_constraintLeft_toLeftOf="@id/rectangle"
+        app:layout_constraintRight_toRightOf="@id/rectangle"
+        app:layout_constraintTop_toTopOf="@id/rectangle" /> <!--> Поле для ввода логина <-->
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/rectangle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginTop="50dp"
+
+        android:id="@+id/rectangle2"
+
+        android:src="@drawable/rectangle"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        app:layout_constraintBottom_toBottomOf="@id/rectangle2"
+        app:layout_constraintLeft_toLeftOf="@id/rectangle2"
+        app:layout_constraintRight_toRightOf="@id/rectangle2"
+        app:layout_constraintTop_toTopOf="@id/rectangle2"
+
+        android:id="@+id/PasswordEditText"
+
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Пароль"
+
+        android:minHeight="48dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/introFontColor"
+
+        android:inputType="textPassword"
+         /> <!--> Поле для ввода пароля <-->
+
+    <com.google.android.material.button.MaterialButton
+        app:layout_constraintTop_toBottomOf="@id/rectangle2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:id="@+id/button"
+
+        android:layout_marginTop="100dp"
+
+        android:layout_width="220dp"
+        android:layout_height="76dp"
+
+        android:backgroundTint="@color/buttonColor"
+        app:cornerRadius="25dp"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+        android:text="Зарегистрироваться"
+        android:textColor="@color/buttonFontColor"
+        android:textStyle="bold"
+        /> <!--> Кнопка зарегистрироваться <-->
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:text="Уже зарегистрированы?"
+        android:textSize="24sp"
+        android:textColor="@color/RegAuthfontColor"
+        android:textStyle="bold"
+
+        android:onClick="OpenAuthActivity"
+        /> <!--> Уже зарегистрированы? <-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
