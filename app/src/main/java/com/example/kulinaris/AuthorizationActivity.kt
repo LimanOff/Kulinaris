@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class Authorization_Activity : AppCompatActivity()
+class AuthorizationActivity : AppCompatActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -15,13 +15,13 @@ class Authorization_Activity : AppCompatActivity()
 
     fun OpenRegActivity(view: View)
     {
-        val intent = Intent(this,Registration_Activity::class.java)
+        val intent = Intent(this,RegistrationActivity::class.java)
         startActivity(intent)
     }
 
     fun OpenMenuActivity(view: View)
     {
-        val intent = Intent(this,Menu_Activity::class.java)
+        val intent = Intent(this,MenuActivity::class.java)
         startActivity(intent)
     }
 }

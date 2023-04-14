@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class Registration_Activity : AppCompatActivity() {
+class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration_panel)
@@ -13,13 +13,13 @@ class Registration_Activity : AppCompatActivity() {
 
     fun OpenAuthActivity(view: View)
     {
-        val intent = Intent(this,Authorization_Activity::class.java)
+        val intent = Intent(this,AuthorizationActivity::class.java)
         startActivity(intent)
     }
 
     fun OpenMenuActivity(view: View)
     {
-        val intent = Intent(this,Menu_Activity::class.java)
+        val intent = Intent(this,MenuActivity::class.java)
         startActivity(intent)
     }
 }

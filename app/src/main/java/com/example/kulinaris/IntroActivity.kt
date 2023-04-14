@@ -52,7 +52,7 @@ class IntroActivity : AppCompatActivity() {
     }
     fun LoadNextActivity()
     {
-        val intent = Intent(this,Registration_Activity::class.java)
+        val intent = Intent(this,RegistrationActivity::class.java)
         startActivity(intent)
     }
 }

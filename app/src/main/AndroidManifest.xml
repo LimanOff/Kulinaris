@@ -14,16 +14,16 @@
         android:theme="@style/Theme.Kulinaris"
         tools:targetApi="31">
         <activity
-            android:name=".Favorites_Recipes_Activity"
+            android:name=".FavoritesRecipesActivity"
             android:exported="true" />
         <activity
-            android:name=".Menu_Activity"
+            android:name=".MenuActivity"
             android:exported="true" />
         <activity
-            android:name=".Authorization_Activity"
+            android:name=".AuthorizationActivity"
             android:exported="true" />
         <activity
-            android:name=".Registration_Activity"
+            android:name=".RegistrationActivity"
             android:exported="true"></activity>
         <activity
             android:name=".IntroActivity"
