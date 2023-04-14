@@ -137,6 +137,8 @@
         android:text="Зарегистрироваться"
         android:textColor="@color/buttonFontColor"
         android:textStyle="bold"
+
+        android:onClick="OpenMenuActivity"
         /> <!--> Кнопка зарегистрироваться <-->
 
     <TextView

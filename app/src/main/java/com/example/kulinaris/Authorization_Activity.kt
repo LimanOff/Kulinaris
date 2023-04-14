@@ -18,4 +18,10 @@ class Authorization_Activity : AppCompatActivity()
         val intent = Intent(this,Registration_Activity::class.java)
         startActivity(intent)
     }
+
+    fun OpenMenuActivity(view: View)
+    {
+        val intent = Intent(this,Menu_Activity::class.java)
+        startActivity(intent)
+    }
 }
