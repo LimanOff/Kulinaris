@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favorites_Recipes_Activity"
+    android:background="@color/backgroundColor">
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:id="@+id/UpCaps"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/upcaps"/> <!--> Верхние колпаки <-->
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/UpCaps"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:id="@+id/DownCaps"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/downcaps"/> <!--> Нижние колпаки <-->
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:id="@+id/menutext"
+
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="24dp"
+
+        android:text="Избранное"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> <!--> Избранное текст <-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favoriterecipeList_RV"
+
+        app:layout_constraintTop_toBottomOf="@id/menutext"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </androidx.recyclerview.widget.RecyclerView> <!--> Лист рецептов <-->
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/footerBackgroundColor">
+        <ImageView
+            android:id="@+id/magnifier"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="61dp"
+
+            android:src="@drawable/magnifier"
+            /> <!--> Лупа поиск <-->
+        <ImageView
+            android:id="@+id/heart"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="165dp"
+
+            android:src="@drawable/fillheart"
+            /> <!--> Сердце избранное <-->
+    </LinearLayout> <!--> Footer <-->
+</androidx.constraintlayout.widget.ConstraintLayout>
