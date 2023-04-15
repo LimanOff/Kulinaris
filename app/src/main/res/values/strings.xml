@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Kulinaris</string>
+    
+    <string-array name="ingredients">
+        <item>Яйцо</item>
+        <item>Молоко</item>
+        <item>Колбаса</item>
+    </string-array>
 </resources>

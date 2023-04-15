@@ -81,6 +81,8 @@
             android:layout_marginLeft="61dp"
 
             android:src="@drawable/magnifier"
+
+            android:onClick="OpenAddingIngredientsActivity"
             /> <!--> Лупа поиск <-->
         <ImageView
         android:id="@+id/heart"

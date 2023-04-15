@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
 
-        android:id="@+id/menutext"
+        android:id="@+id/favoriteText"
 
         android:layout_marginTop="88dp"
         android:layout_marginLeft="24dp"
@@ -51,7 +51,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/favoriterecipeList_RV"
 
-        app:layout_constraintTop_toBottomOf="@id/menutext"
+        app:layout_constraintTop_toBottomOf="@id/favoriteText"
         app:layout_constraintBottom_toTopOf="@id/footer"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -81,6 +81,7 @@
             android:layout_marginLeft="61dp"
 
             android:src="@drawable/magnifier"
+            android:onClick="OpenAddingIngredientsActivity"
             /> <!--> Лупа поиск <-->
         <ImageView
             android:id="@+id/heart"

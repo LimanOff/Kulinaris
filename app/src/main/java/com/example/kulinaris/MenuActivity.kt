@@ -18,4 +18,10 @@ class MenuActivity : AppCompatActivity()
         intent = Intent(this,FavoritesRecipesActivity::class.java)
         startActivity(intent)
     }
+
+    fun OpenAddingIngredientsActivity(view: View)
+    {
+        intent = Intent(this,AddingIngredientsActivity::class.java)
+        startActivity(intent)
+    }
 }
